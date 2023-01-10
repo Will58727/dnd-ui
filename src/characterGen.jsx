@@ -1,10 +1,22 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import DnDCharacterStatsSheet from 'dnd-character-sheets'
-import 'dnd-character-sheets/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <DnDCharacterStatsSheet />
-  }
+
+class CharacterSheet extends Component{
+    constructor(props){
+        super(props);
+        this.props = props;
+    }
+
+    render(){
+        return(
+            <div className="CharacterSheet">
+                CharacterSheet
+            </div>
+
+        )
+    }
+
 }
+
+export default CharacterSheet;
