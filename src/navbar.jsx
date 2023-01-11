@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 
-const navBar = ({selectedTeam, teamMemberCount}) => {
+const NavBar = ({selectedTeam, teamMemberCount}) => {
     return(
         <header className='container'>
             <div className='row justify-content-center mt-3 mb-4'>
@@ -13,4 +13,4 @@ const navBar = ({selectedTeam, teamMemberCount}) => {
         </header>
     )
 }
-export default Header
+export default NavBar
