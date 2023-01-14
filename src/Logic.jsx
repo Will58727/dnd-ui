@@ -1,29 +1,37 @@
-let class = ['elf','human','dwarf']
-let gender = ['male','female']
+let classes = ['rouge','warrior','mage']
+let race = ['elf','human','dwarf']
 let skill = ['acrobatics','animal handling']
 
 
 
 //function to choose random word
-function chooseClass() {
+function chosenClass() {
         // generate a random value between 1 and 0 multiply
-        const randomIndex = Math.floor(Math.random() * words.length);
-        chosenClass = class[randomIndex];
+        const randomIndex = Math.floor(Math.random() * classes.length);
+        return classes[randomIndex];
         
 }
 
-function chooseGender() {
+function chosenRace() {
     // generate a random value between 1 and 0 multiply
-    const randomIndex = Math.floor(Math.random() * words.length);
-    chosenGender = gender[randomIndex];
+    const randomIndex = Math.floor(Math.random() * race.length);
+    return race[randomIndex];
     
 }
 
-function chooseSkill() {
+function chosenSkill() {
     // generate a random value between 1 and 0 multiply
-    const randomIndex = Math.floor(Math.random() * words.length);
-    chosenSkill = skill[randomIndex];
+    const randomIndex = Math.floor(Math.random() * skill.length);
+    return skill[randomIndex];
     
 }
 
-export default Logic
+function genCharacter() {
+    const characterTraits = []
+    characterTraits.push(chosenClass());
+    characterTraits.push(chosenRace());
+    characterTraits.push(chosenSkill());
+    return characterTraits
+}
+
+export default genCharacter

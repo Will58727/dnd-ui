@@ -1,8 +1,9 @@
 import React from 'react';
-import Logic from './logic';
+import genCharacter from './Logic';
+import { useState } from 'react';
 
-
-const characterGen = () => {
+const CharacterGen = () => {
+    const [genData, setGenData] = useState([])
 
     return(
         <div className="characterGen">
@@ -36,7 +37,7 @@ Thanks to all the people who donated!
 
 Just to clarify - there are two ways to play. You can play as a character or you can play as the GM. Either way you play is the best, but I'm glad you guys wanted to play as characters.
                     </p>
-                    <button onClick={chooseSkill(), chooseClass(), chooseGender()} className="gen-btn">Start your adventure!</button> 
+                    <button onClick={() => {setGenData(genCharacter())}} className="gen-btn">Start your adventure!</button> 
         </div>
 
     )
@@ -45,4 +46,4 @@ Just to clarify - there are two ways to play. You can play as a character or you
 }
 
 
-export default characterGen;
+export default CharacterGen;

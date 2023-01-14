@@ -1,6 +1,6 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import characterGen from './CharacterGen';
-import logic from './logic';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import CharacterGen from './CharacterGen';
+import Character from './Character'
 import './style.css';
 
 function App() {
@@ -9,30 +9,23 @@ function App() {
         <h1>DnD.ui</h1>
         <nav>
         <ul>
-          <li><a href="/characterGen">Character generator</a></li>
-          <li><a href="/logic">logic</a></li>
-          <li><a href="/character">character</a></li>
+          <li><a href="/CharacterGen">Character generator</a></li>
+          <li><a href="/Logic">Logic</a></li>
+          <li><a href="/Character">Character</a></li>
         </ul>
       </nav>
         <BrowserRouter>
-          <Switch>
-            <Route path="/characterGen">
-              <characterGen />
+          <Routes>
+            <Route path="/CharacterGen">
+              <CharacterGen />
             </Route>
-            <Route path="/logic">
-              <logic />
+
+            <Route path="/Character">
+              <Character />
             </Route>
-            <Route path="/character">
-              <character />
-            </Route>
-          </Switch>
+          </Routes>
         </BrowserRouter>
       </div>
-    );
-  }
-  
-
-}
-
+    )
+};
 export default App;
-
