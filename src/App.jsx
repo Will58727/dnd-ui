@@ -6,7 +6,14 @@ import './style.css';
 function App() {
     return (
       <div className="wrapper">
-        <h1>Marine Mammals</h1>
+        <h1>DnD.ui</h1>
+        <nav>
+        <ul>
+          <li><a href="/characterGen">Character generator</a></li>
+          <li><a href="/logic">logic</a></li>
+          <li><a href="/character">character</a></li>
+        </ul>
+      </nav>
         <BrowserRouter>
           <Switch>
             <Route path="/characterGen">
