@@ -1,11 +1,11 @@
 import React from 'react';
-import test from './test';
+import Logic from './logic';
 
 
-const CharacterGen = () => {
+const characterGen = () => {
 
     return(
-        <div className="CharacterGen">
+        <div className="characterGen">
                     <p>the D&D character generator will randomly generate a character for you to use in your next D&D campaign!
 
 it'll handle any system to get that character converted to the D&D 5th edition stats (so you can use it on any system or faction),
@@ -36,7 +36,7 @@ Thanks to all the people who donated!
 
 Just to clarify - there are two ways to play. You can play as a character or you can play as the GM. Either way you play is the best, but I'm glad you guys wanted to play as characters.
                     </p>
-                    <button className="gen-btn">Start your adventure!</button> 
+                    <button onClick={chooseSkill(), chooseClass(), chooseGender()} className="gen-btn">Start your adventure!</button> 
         </div>
 
     )
@@ -45,4 +45,4 @@ Just to clarify - there are two ways to play. You can play as a character or you
 }
 
 
-export default CharacterGen;
+export default characterGen;
