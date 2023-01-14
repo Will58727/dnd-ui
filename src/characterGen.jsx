@@ -1,5 +1,5 @@
 import React from 'react';
-
+import test from './test';
 
 
 const CharacterGen = () => {
@@ -43,5 +43,6 @@ Just to clarify - there are two ways to play. You can play as a character or you
 
 
 }
+
 
 export default CharacterGen;
