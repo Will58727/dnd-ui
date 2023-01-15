@@ -1,5 +1,6 @@
-import Stack from 'react-bootstrap/Stack';
-<link rel="stylesheet" href="style.css"></link>
+import React from 'react';
+
+
 
 function VerticalExample() {
   return (

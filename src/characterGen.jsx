@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const CharacterGen = () => {
     const [genData, setGenData] = useState([])
-
+    
     return(
         <div className="characterGen">
                     <p>the D&D character generator will randomly generate a character for you to use in your next D&D campaign!
