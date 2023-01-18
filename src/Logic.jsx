@@ -34,4 +34,4 @@ function genCharacter() {
     return characterTraits
 }
 
-export default genCharacter
+export default genCharacter;

@@ -5,3 +5,9 @@ html{
 body{
     text-align: center;
 }
+
+.row{
+    background-color: grey;
+    border-color: red;
+
+}

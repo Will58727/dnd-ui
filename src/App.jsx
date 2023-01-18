@@ -1,30 +1,23 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CharacterGen from './CharacterGen';
-import Character from './Character'
+import Character from './Character';
+import Nav from './Nav';
+import Home from './Home'
+
 import './style.css';
 
 function App() {
     return (
-      <div className="wrapper">
-        <h1>DnD.ui</h1>
-            <nav>
-                <ul>
-                    <li><a href="/CharacterGen">Character generator</a></li>
-                    <li><a href="/Logic">Logic</a></li>
-                    <li><a href="/Character">Character</a></li>
-                </ul>
-            </nav>
         <BrowserRouter>
           <Routes>
-            <Route path="/CharacterGen" element={<CharacterGen />}/>
-
-            <Route path="/Character">7
-              <Character />
-            </Route>
+            <Route index element={<Home />}>
+                <Route path='/' element={<Nav />}/>
+                <Route path="/CharacterGen" element={<CharacterGen />}/>
+                <Route path="/Character" element={<Character />}/>
+           </Route>
           </Routes>
         </BrowserRouter>
-      </div>
     )
 };
 export default App;
