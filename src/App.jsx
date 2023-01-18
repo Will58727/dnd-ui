@@ -17,11 +17,9 @@ function App() {
             </nav>
         <BrowserRouter>
           <Routes>
-            <Route path="/CharacterGen">
-              <CharacterGen />
-            </Route>
+            <Route path="/CharacterGen" element={<CharacterGen />}/>
 
-            <Route path="/Character">
+            <Route path="/Character">7
               <Character />
             </Route>
           </Routes>
