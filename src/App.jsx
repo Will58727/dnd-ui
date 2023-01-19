@@ -4,15 +4,14 @@ import CharacterGen from './CharacterGen';
 import Character from './Character';
 import Nav from './Nav';
 import Home from './Home'
-
 import './style.css';
 
 function App() {
     return (
         <BrowserRouter>
           <Routes>
-            <Route index element={<Home />}>
-                <Route path='/' element={<Nav />}/>
+            <Route path='/' element={<Nav />}>
+                <Route index element={<Home />}/>
                 <Route path="/CharacterGen" element={<CharacterGen />}/>
                 <Route path="/Character" element={<Character />}/>
            </Route>

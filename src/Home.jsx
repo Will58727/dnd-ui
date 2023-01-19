@@ -5,7 +5,6 @@ const Home = () => {
     return (
         <div>
             <h2>DnD.ui</h2>
-            <Nav/>
         </div>
     )
 }

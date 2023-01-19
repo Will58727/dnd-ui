@@ -5,28 +5,28 @@ let skill = ['acrobatics','animal handling']
 
 
 //function to choose random word
-function chosenClass() {
+export function chosenClass() {
         // generate a random value between 1 and 0 multiply
         const randomIndex = Math.floor(Math.random() * classes.length);
         return classes[randomIndex];
         
 }
 
-function chosenRace() {
+export function chosenRace() {
     // generate a random value between 1 and 0 multiply
     const randomIndex = Math.floor(Math.random() * race.length);
     return race[randomIndex];
     
 }
 
-function chosenSkill() {
+export function chosenSkill() {
     // generate a random value between 1 and 0 multiply
     const randomIndex = Math.floor(Math.random() * skill.length);
     return skill[randomIndex];
     
 }
 
-function genCharacter() {
+export function genCharacter() {
     const characterTraits = []
     characterTraits.push(chosenClass());
     characterTraits.push(chosenRace());
@@ -34,4 +34,3 @@ function genCharacter() {
     return characterTraits
 }
 
-export default genCharacter;
