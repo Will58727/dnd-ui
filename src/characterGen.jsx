@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function CharacterGen() {
   return (
     <div>
-                            <p>the D&D character generator will randomly generate a character for you to use in your next D&D campaign!
+                            <p className='genText'>the D&D character generator will randomly generate a character for you to use in your next D&D campaign!
 
 it'll handle any system to get that character converted to the D&D 5th edition stats (so you can use it on any system or faction),
 
