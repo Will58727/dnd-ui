@@ -3,7 +3,6 @@ let race = ['elf','human','dwarf']
 let skill = ['acrobatics','animal handling']
 
 
-
 //function to choose random word
 export function chosenClass() {
         // generate a random value between 1 and 0 multiply

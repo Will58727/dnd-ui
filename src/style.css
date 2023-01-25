@@ -8,6 +8,7 @@
     margin-top: 100px;
     justify-content: center;
     align-items: center;
+    font-family: primary-font;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -33,10 +34,11 @@ html {
 }
 
 body {
-	font-size: 1.6rem;
-	font-family: primary-font;
+    font-size: 1.6rem;
+    font-family: primary-font;
     color: silver;
     text-align: center;
+    font-family: primary-font;
 }
 
 a {
@@ -65,11 +67,7 @@ img {
     }
   }
 
-  Home{
-    
-  }
-
-  .genText{
+  .genTextOne{
     display: flex;
     gap: 10px;
     gap: 10px 20px; /* row-gap column gap */
@@ -81,26 +79,50 @@ img {
     margin-right: 150px;
     font-size: 1.6rem;
     font-family: primary-font;
-    color: #980820;
+    color: #460000da;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    float: left;
+  }
+
+  .genTextOne{
+    display: flex;
+    gap: 10px;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;   
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 1.6rem;
+    font-family: primary-font;
+    color: #460000da;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: right;
   }
 
   .navBar{
 	font-size: 1.6rem;
 	font-family: primary-font;
-    color: #d90429;
+    color: #460000da;
 
 }
 a:link{
-    color: #ef233c;
+    color:#460000da;
     text-decoration: underline;
-    float: left;
 }
 a:visited{
-    color: #ef233c;
+    color: #460000da;
+}
+a:hover{
+    color:#0051c3;
+    text-decoration: underline;
 }
 
 .row{
@@ -108,7 +130,10 @@ a:visited{
 }
 button{
     font-size: 50px;
-    color: #ef233c;
-    background-color: black;
+    color: #460000da;
+    background-color: #4a8be7;
     border-radius: 5px;
+    margin-top: 250px;
+    font-family: primary-font;
 }
+
